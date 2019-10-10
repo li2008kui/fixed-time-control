@@ -1,0 +1,55 @@
+﻿#divOperate
+{
+    margin-bottom: 10px;
+}
+
+#divOperate
+{
+    margin-right: 20px;
+}
+
+    #divOperate input
+    {
+        margin: auto 10px;
+    }
+
+#divFixedTime
+{
+    width: 621px;
+    height: 304px;
+    background: url(bg.jpg) no-repeat scroll 0% 0%;
+    _background: url(bg2.jpg); /*IE6使用小的背景*/
+    background-size: 621px 304px;
+    /*IE 9以下不支持CSS 3属性background-size*/
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bg.jpg',sizingMethod='scale');
+}
+
+.divDimmingPoint
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffff00;
+    cursor: pointer;
+    -webkit-border-radius: 8px; /*早期版本的Safari和Chrome，支持属性*/
+    -moz-border-radius: 8px; /*早期版本的Firefox*/
+    border-radius: 8px; /*IE 9、Opera 10.5、Safari 5、Chrome 4和Firefox 4以上*/
+    z-index: 1000;
+}
+
+    .divDimmingPoint .divValue
+    {
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        font-size: 11px;
+        width: 70px;
+    }
+
+.divLine
+{
+    overflow: hidden; /*解决IE6、IE5.5 DIV height 小于20px不起作用*/
+    position: absolute;
+    background-color: red;
+    z-index: 999;
+}
